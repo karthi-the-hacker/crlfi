@@ -44,7 +44,7 @@ console.log("  \n\n\x1b[36;1m👋 Hey \x1b[37;1m"+require("os").userInfo().usern
 console.log(" .-----------------------------.           ");
 
 console.log(" |  Tool   : crlfi 👾          |           ");
-console.log(" |  Author : \x1b[32;1m@karthithehacker🎖️\x1b[34;1m |           ");
+console.log(" |  Author : \x1b[32;1m@karthithehacker🎖️\x1b[36;1m |           ");
 console.log(" |       'OR'1'='1' --+        |           ");
 console.log(" '-----------------------------'           ");
 console.log("                 ^      (\\_/)    ");
