@@ -16,7 +16,11 @@ class scanner {
         request.get({url:url+payload,followRedirect :false,rejectUnauthorized: false}, (error, response, body) => {
             if (error) { } 
             else {
-                if (response.headers.crlfi == "karthithehacker"){
+                //if (response.headers.crlfi == "karthithehacker" ) ---> removed this to make more accurate 
+                if (response.headers.crlfi) //changed from this to if(response.headers.crlfi == "karthithehacker" ) ====>  if (response.headers.crlfi) to make more accurate
+                {
+                    
+                    
                     console.log("\x1b[31;1m💸[Vulnerable]\x1b[0m ======> \x1b[34;1m"+url+"\x1b[32;1m  🚨[Payload] ======> "+payload+"\x1b[0m\n\x1b[35;1m📸PoC-Url->\x1b[34;1m$\x1b[0m  "+url+payload+"\n\n\n");
                     if(path == null || path == true){
                         return;     
